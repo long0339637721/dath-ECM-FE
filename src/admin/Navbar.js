@@ -9,6 +9,7 @@ export default function Navbar() {
         </div>
         <CustomLink to="/calender">Calender</CustomLink>
         <CustomLink to="/class">Class</CustomLink>
+        <CustomLink to="/addclass">Add Class</CustomLink>
         <CustomLink to="/teacher">Teacher</CustomLink>
         <CustomLink to="/student">Student</CustomLink>
         <CustomLink to="/attendance">Attendance</CustomLink>

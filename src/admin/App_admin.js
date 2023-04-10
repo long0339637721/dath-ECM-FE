@@ -1,9 +1,10 @@
 import Navbar from "./Navbar"
-import Teacher from "./Teacher"
-import Calender from "./Calender"
-import Attendance from "./Attendance"
-import Student from "./Student"
-import Class from "./Class"
+import Teacher from "./Teacher/Teacher"
+import Calender from "./Calender/Calender"
+import Attendance from "./Attendance/Attendance"
+import Student from "./Student/Student"
+import Class from "./Class/Class"
+import AddClass from "./Class/AddClass"
 import '../App.css';
 import "../styles.css"
 
@@ -32,6 +33,7 @@ function App_admin() {
               <Route path="/calender" element={<Calender />} />
               <Route path="/attendance" element={<Attendance />} />
               <Route path="/class" element={<Class />} />
+              <Route path="/addclass" element={<AddClass />} />
               <Route path="/teacher" element={<Teacher />} />
               <Route path="/student" element={<Student />} />
             </Routes>
