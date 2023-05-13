@@ -1,0 +1,58 @@
+.Name_of_teacher{
+    color: #0061FF;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 26px;
+    margin-bottom: 1rem;
+}
+.List_Lesson{
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 0 2rem;
+}
+.Present_Lesson{
+    display: flex;
+    flex-direction: column;
+    min-height: 10rem;
+    min-width: 8rem;
+    border-radius: 5px;
+}
+.Time_Lesson{
+    display: flex;
+    flex-direction: row;
+    min-height: 3rem;
+    border-bottom: 1px solid #acacac;
+}
+.Time_Thu{
+    color: #3A3949;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 18px;
+}
+.Time_Day{
+    color: #3A3949;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-size: 16px;
+}
+.Note_Lesson{
+    color: #3A3949;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    font-size: 16px;
+}
+.bgWhite{
+    background-color: #ffff;
+}
+.bgRed{
+    background-color: #ec9191;
+}
+.bgYellow{
+    background-color: #ebe895;
+}
+.bgGreen{
+    background-color: #a2e981;
+}

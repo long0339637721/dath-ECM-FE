@@ -1,0 +1,51 @@
+button {
+  border-radius: 5px;
+  background-color: #75def3;
+  margin: 5px;
+  border-color: darkgray;
+}
+button:hover {
+  background-color: #3bc3df;
+}
+
+.event-details {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.event-details li {
+  margin-bottom: 0.5rem;
+}
+
+.button_contener {
+  display: flex;
+  justify-content: center;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  max-width: 700px;
+}
+
+.panel-body {
+  margin-bottom: 15px;
+}
+
+.control-label {
+  width: 25%;
+}
+
+.col-sm-10 {
+  width: 75%;
+}
+.control-label {
+  margin-left: 8px;
+  margin-bottom: 4px;
+}
+.form-control {
+  width: 100%;
+}

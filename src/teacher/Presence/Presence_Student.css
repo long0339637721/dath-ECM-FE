@@ -1,0 +1,197 @@
+#list_classes{
+    display: flex;
+    flex-direction: column;
+}
+.Name_of_teacher{
+    color: #0061FF;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 28px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.List_Lesson{
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 0 2rem;
+}
+.Present_Lesson{
+    display: flex;
+    flex-direction: column;
+    min-height: 10rem;
+    max-width: 12rem;
+    border-radius: 7px;
+    border:groove;
+    box-shadow: 5px 5px 10px #b3afaf40;;
+}
+.Time_Lesson{
+    display: flex;
+    flex-direction: column;
+    min-height: 2rem;
+    border-bottom: 1px solid #acacac;
+    justify-content: flex-start;
+    padding: 0.5rem 0.5rem;
+}
+.Time_Thu{
+    color: #3A3949;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.Time_Day{
+    color: #3A3949;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.Note_Lesson{
+    color: #3A3949;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    font-size: 16px;
+}
+.bgWhite{
+    background-color: #ffff;
+}
+.bgRed{
+    background-color: #f45b5b;
+}
+.bgYellow{
+    background-color: #f5ef56;
+}
+.bgGreen{
+    background-color: #86fc4f;
+}
+.PCID{
+    position: absolute;
+    left: 5rem;
+}
+.PCCType{
+    position: absolute;
+    left: 16rem;
+}
+.PCteacher{
+    position: absolute;
+    left: 25rem;
+    width: 15rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.PCPresent{
+    position: absolute;
+    left: 45rem;
+}
+.PCStatis{
+    position: absolute;
+    left: 45rem;
+}
+.RowsListClass{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    top: 2rem;
+}
+.Search_Presence_Student{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    padding-left: 7rem;
+    top: 12rem;
+}
+.SNameColumn{
+    background-color: #ffff;
+    display: flex;
+    flex-direction: row;
+    top: 2rem;
+    justify-content: space-around;
+    min-height: 2rem;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    position: relative;
+    margin: 5px 0;
+    min-width: 65rem;
+}
+.SbackgroundBlue{
+    background-color: #0061FF;
+}
+#Sback{
+    display: none;
+    background-color: #ffff;
+    color: #3A3949;
+    box-shadow: 5px 5px 10px #00000040;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+}
+#Sback_1{
+    display: none;
+    background-color: #ffff;
+    color: #3A3949;
+    box-shadow: 5px 5px 10px #00000040;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+}
+#list_student{
+    display: none;
+}
+#a_student{
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#statistic_a_class{
+    display: none;
+}
+.CSID{
+    position: absolute;
+    left: 2rem;
+}
+.CSName{
+    position: absolute;
+    left: 10rem;
+}
+.CSSex{
+    position: absolute;
+    left: 25rem;
+}
+.CSPhone{
+    position: absolute;
+    left: 30rem;
+}
+.CSPresent{
+    position: absolute;
+    left: 40rem;
+}
+.CSNote{
+    position: absolute;
+    left: 50rem;
+}
+.infoClass{
+    display: flex;
+    flex-direction: row;
+}
+.statis_class{
+    top: 2rem;
+    min-height: 2rem;
+    position: relative;
+    margin: 5px 0;
+    margin-right: 5rem;
+    min-width: 10rem;
+}
+.statisesofclass{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.infoStatis{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}

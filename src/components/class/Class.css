@@ -1,0 +1,87 @@
+.tablelist table, .tablelist th {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+.tablelist th {
+  background-color: #0061FF;
+  color: white;
+  border-left: 0;
+  border-right: 0;
+}
+
+.th_left {
+  border-radius: 10px 0 0 0;
+}
+
+.th_right {
+  border-radius: 0 10px 0 0;
+}
+
+.tdhover:hover {
+  background-color: aquamarine;
+}
+
+.tablelist td {
+  border: 0;
+  border-bottom: 1px solid #86c8ff;
+}
+
+.tablelist tr:hover {
+  background-color: #dddd;
+}
+
+.c1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 95%;
+  align-items: center;
+}
+.inf-content{
+  border:1px solid #DDDDDD;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+}	
+
+.filterbox {
+  border-radius: 3px;
+  border-color: aqua;
+  min-width: 50px;
+}
+
+/* --------------------------------- */
+.fullscreen {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(90, 90, 90, 0.5);
+  z-index: 9999;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ddd;
+  padding: 8px 16px;
+  border-radius: 10px;
+  z-index: 10000;
+}
+.popup h4 {
+  margin-left: 10px;
+}
+
+.popup form div {
+  text-align: left;
+}
+.popup form label {
+  font-weight: 400;
+  font-size: 16px;
+  padding-right: 10px;
+}
