@@ -2,19 +2,21 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 export default function Navbar() {
   return (
-    <nav className="nav">
-      <ul>
-        <div className="logo">
-          <img src="logoECM.png" alt="logo"/>
-        </div>
-        <CustomLink to="/calender">Calender</CustomLink>
-        <CustomLink to="/class">Class</CustomLink>
-        <CustomLink to="/addclass">Add Class</CustomLink>
-        <CustomLink to="/teacher">Teacher</CustomLink>
-        <CustomLink to="/student">Student</CustomLink>
-        <CustomLink to="/attendance">Attendance</CustomLink>
-      </ul>
-    </nav>
+    <div style={{background: '#333'}}>
+      <nav className="nav">
+        <ul>
+          <div className="logo">
+            <img src="http://localhost:3000/logoECM.png" alt="logo"/>
+          </div>
+          <CustomLink to="/admin/">Calender</CustomLink>
+          <CustomLink to="/admin/class">Class</CustomLink>
+          {/* <CustomLink to="/class/addclass">Add Class</CustomLink> */}
+          <CustomLink to="/admin/teacher">Teacher</CustomLink>
+          <CustomLink to="/admin/student">Student</CustomLink>
+          <CustomLink to="/admin/attendance">Presence</CustomLink>
+        </ul>
+      </nav>
+    </div>
   )
 }
 

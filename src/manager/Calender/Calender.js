@@ -7,7 +7,7 @@ import Modal from 'react-modal';
 import ReactModal from 'react-modal';
 import { NavLink } from 'react-router-dom';
 import "react-big-calendar/lib/css/react-big-calendar.css";
-
+var location = Location
 ReactModal.setAppElement('#root');
 
 const localizer = momentLocalizer(moment);
@@ -83,7 +83,7 @@ function Calender() {
       reply = await reply.json()
       console.log("Add lesson: " + reply.message)
       alert(reply.message)
-      window.location.reload()
+      location.reload()
     }
   }
 
@@ -192,7 +192,6 @@ function Calender() {
         'ID': resjson[i].ID,
         'CID': resjson[i].CID,
         'MID': resjson[i].MID,
-        'type': inforClassJson.CType,
         'teacher': inforTeacherJson.FullName,
         'room': inforRoomJson.Name,
         'status': resjson[i].status,
@@ -201,38 +200,6 @@ function Calender() {
     }
     // console.log(resfix)
     setUserlist(resfix)
-  }
-
-  function eventStyleGetter(event) {
-    console.log("style")
-    switch (event.type) {
-      case '1A':
-        return {
-          style: {
-            backgroundColor: 'red'
-          }
-        };
-      case '2A':
-        return {
-          style: {
-            backgroundColor: 'blue'
-          }
-        };
-      case '3A':
-        return {
-          style: {
-            backgroundColor: '#999'
-          }
-        };
-      case '4A':
-        return {
-          style: {
-            backgroundColor: '#eee'
-          }
-        };
-      default:
-        return {};
-    }
   }
 
   useEffect(() => {
@@ -246,7 +213,6 @@ function Calender() {
           localizer={localizer} 
           events={userlist} 
           style={{ height: "100%",width: "100%"}} 
-          eventStyleGetter={eventStyleGetter}
           views={['week', "day"]}
           min={new Date(0, 0, 0, 6, 0)}
           max={new Date(0, 0, 0, 17, 0)}
@@ -278,7 +244,7 @@ function Calender() {
             onClick={() => {setShowModal(false);setShowModal2(true)}}
             style={{color:'blue'}}
           >Register for a makeup session</li>
-          <li><NavLink to={"/admin/infor/" + selectedEvent.CID}>More about this class</NavLink></li>
+          <li><NavLink to={"/manager/infor/" + selectedEvent.CID}>More about this class</NavLink></li>
 
         </ul>
       </Modal>

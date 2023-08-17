@@ -84,3 +84,30 @@ header{
   display: flex;
   flex-direction: column;
 }
+
+.menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-button {
+  background-color: #ffffff;
+  border: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.dropdown-button:hover {
+  background-color: #61dafb;
+}

@@ -1,0 +1,203 @@
+#list_teacher{
+    display: flex;
+    flex-direction: column;
+}
+#a_teacher{
+    display: none;
+    flex-direction: column;
+}
+#back{
+    display: none;
+    background-color: #ffff;
+    color: #3A3949;
+    box-shadow: 5px 5px 10px #00000040;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+}
+.NameColumn{
+    background-color: #ffff;
+    display: flex;
+    flex-direction: row;
+    top: 2rem;
+    justify-content: space-around;
+    min-height: 2rem;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    position: relative;
+    margin: 5px 0;
+    margin-right: 5rem;
+}
+.Text_NameColumn{
+    color: #3A3949;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    margin: 0rem;
+}
+
+.backgroundBlue{
+    background-color: #0061FF;
+}
+
+.colorWhite{
+    color: #ffff;
+}
+
+.editRows{
+    border-bottom: 1px solid #acacac;
+    border-left: 1px solid #acacac;
+    border-right: 1px solid #acacac;
+    border-radius: 0px;
+    justify-content: flex-start ;
+}
+.margin_ID{
+    margin-left: 2rem;
+}
+.margin_FullName{
+    margin-left: 5rem;
+}
+.margin_Sex{
+    margin-left: 7rem;
+}
+.margin_CID{
+    margin-left: 10rem;
+}
+.margin_CType{
+    margin-left: 15rem;
+}
+.margin_Statis{
+    margin-left: 12rem;
+}
+
+/* Thanh tìm kiếm */
+.Search_Presence_Teacher{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    top: 1rem;
+    padding-left: 7rem;
+}
+
+.TextSearch{
+    align-items: center;
+    border-radius: 8px;
+    color: #3A3949;
+    box-shadow: 3px 3px 5px #00000040;
+    text-align: center;
+    background-color: #ffff;
+    width: auto;
+}
+
+.Button_Search{
+    background-color: #0061FF;
+    color: #ffff;
+    box-shadow: 5px 5px 10px #00000040;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 10px;
+    height: 2rem;
+    width: 7rem;
+}
+
+.CTypeSearch{
+    box-shadow: 3px 3px 5px #00000040;
+    border-radius: 5px;
+    height: 2rem;
+}
+.radio_show{
+    margin-right: 2rem;
+}
+.Only_show{
+    display: flex;
+    flex-direction: row;
+}
+.Name_of_teacher{
+    color: #0061FF;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 26px;
+    margin-bottom: 1rem;
+}
+.ID_teacher{
+    position: absolute;
+    left: 3rem;
+}
+.FullName_teacher{
+    position: absolute;
+    left: 12rem;
+}
+.Sex_teacher{
+    position: absolute;
+    left: 26rem;
+}
+.CID_teacher{
+    position: absolute;
+    left: 34.5rem;
+}
+.CType_teacher{
+    position: absolute;
+    left: 51rem;
+}
+.Statis_teacher{
+    position: absolute;
+    left: 68rem;
+}
+.TLID{
+    position: absolute;
+    left: 2rem;
+}
+.TCID{
+    position: absolute;
+    left: 11rem;
+}
+.TD{
+    position: absolute;
+    left: 19rem;
+}
+.TT{
+    position: absolute;
+    left: 31rem;
+}
+.TP{
+    position: absolute;
+    left: 39rem;
+}
+.TN{
+    position: absolute;
+    left: 46rem;
+    width: 30rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.Tieu_de_P{
+    color: #0061FF;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 28px;
+    position: relative;
+    top: 2rem;
+}
+.PTID{
+    position: absolute;
+    left: 5rem;
+}
+.PTFullName{
+    position: absolute;
+    left: 12rem;
+}
+.PTSex{
+    position: absolute;
+    left: 30rem;
+}
+.PTCID{
+    position: absolute;
+    left: 35rem;
+}
+.PTCType{
+    position: absolute;
+    left: 50rem;
+}

@@ -13,6 +13,7 @@ ReactModal.setAppElement('#root');
 const localizer = momentLocalizer(moment);
 
 const token = localStorage.getItem("token")
+const myID = localStorage.getItem("id")
 
 function DtoS (ed) {
   var nextdate = String(ed.getFullYear()) + '-'
@@ -52,9 +53,7 @@ function Calender() {
   const [selectedEvent, setSelectedEvent] = useState('null')
 
   const handleRegister = async () => {
-    if (tid === 'null') {
-      alert('Please select teacher')
-    } else if (rid1 === 0) {
+    if (rid1 === 0) {
       alert('Please select teacher')
     } else if (tbd < 2) {
       alert('Start at: Invalid value')
@@ -63,7 +62,7 @@ function Calender() {
         "ID": lessonID,
         "CID": selectedEvent.CID,
         "RID": rid1,
-        "TID": tid,
+        "TID": myID,
         "MID": selectedEvent.MID,
         "Ngay": DtoS(lessonS1),
         "tiet_bat_dau": tbd,
@@ -152,6 +151,10 @@ function Calender() {
 
     var resfix = []
     for (let i = 0; i < resjson.length; i++) {
+      if (resjson[i].TID != myID){
+        continue
+      }
+
       var inforClass = await fetch('http://localhost:5000/class/' + resjson[i].CID, {
         method: 'GET',
         headers: {
@@ -278,7 +281,7 @@ function Calender() {
             onClick={() => {setShowModal(false);setShowModal2(true)}}
             style={{color:'blue'}}
           >Register for a makeup session</li>
-          <li><NavLink to={"/admin/infor/" + selectedEvent.CID}>More about this class</NavLink></li>
+          <li><NavLink to={"/teacher/infor/" + selectedEvent.CID}>More about this class</NavLink></li>
 
         </ul>
       </Modal>
@@ -296,26 +299,6 @@ function Calender() {
           <button onClick={() => setShowModal2(false)}>Close</button>
         </div>
         <div className="panel">
-          <div className="panel-body">
-            <div className="form-group">
-              <label className="control-label">Teacher:</label>
-              <div className="col-sm-10">
-                <select
-                  value = {tid}
-                  className='form-control'
-                  onChange={(e) => {
-                    console.log("Teacher: " + e.target.value)
-                    setTid(e.target.value)
-                  }}
-                >
-                  <option disabled = "disabled"  value="null">--Choose teacher--</option>
-                  {teacherlist.map((t, index) => 
-                    <option key = {index} value = {t.TID}>{t.FN}</option>
-                  )}
-                </select>
-              </div>
-            </div>
-          </div>
           <div className="panel-body">
             <div className="form-group">
               <label className="control-label">Room:</label>

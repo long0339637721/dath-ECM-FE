@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const token = localStorage.getItem("token")
 const myID = localStorage.getItem("id");
+const role = localStorage.getItem("role")
 
 const Class = () => {
 
@@ -53,7 +54,12 @@ const Class = () => {
 
     var resfix = []
     for(let i = 0; i < resjson.length; i++){
-      
+      if (role === "Teacher"){
+        if (resjson[i].TID != myID){
+          continue
+        }
+      }
+
       var teachername = 'null';
       let tn = await fetch('http://localhost:5000/user/' + resjson[i].TID, {
         method: 'GET',
@@ -139,7 +145,7 @@ const Class = () => {
           <tbody>
             {classlistFix.map((c, index) =>
               <tr key={index}>
-                <td className='tdhover'><NavLink to={"/admin/infor/" + c.CID} style={{border:'0'}}>{c.CID}</NavLink></td>
+                <td className='tdhover'><NavLink to={"/"+role+"/infor/" + c.CID} style={{border:'0'}}>{c.CID}</NavLink></td>
                 <td>{c.CType}</td>
                 <td>{c.Des}</td>
                 <td>{c.TN}</td>
